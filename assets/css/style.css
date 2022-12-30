@@ -971,11 +971,14 @@ Features (Formally why us)
 }
 
 .team .member .card-cont ul li{
+  white-space:nowrap;
   list-style: none;
   color: #afafaf;
   padding: 3px;
   font-size: 15px;
 }
+
+
 
 .team .member .card-cont ul li i{
   margin-right: 4px;
