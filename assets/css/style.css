@@ -17,6 +17,11 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+  color: #ffffff;
+}
+
+p{
+  color: #afafaf;
 }
 
 
@@ -207,7 +212,7 @@ Navigation
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border-radius: 40px;
   min-height: 80px;
-  background: #fff;
+  background: #ffffff;;
 }
 
 .header-area .main-nav .logo {
@@ -603,7 +608,7 @@ Mobile Nav
 Welcome
 -----------------------*/
 .welcome {
-  background-image: linear-gradient(#1f8ce2, #7053d1), url("assets/img/background.png");
+  background-image: linear-gradient(#000000, #1e1e1e);
 }
 .welcome-row {
   min-height: 100vh;
@@ -629,19 +634,20 @@ Welcome
 
 .hire-btn {
   padding: 0;
-  background: #1f8ce2;
+  background: transparent;
+  
   padding: 11px 30px;
   font-size: 16px;
-  color: #fff;
+  color: #1f8ce2;
+  border-color: #1f8ce2;
   border-radius: 50px;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
 
-.hire-btn:hover,
-.apply-btn:hover {
-  color: #fff;
-  background-color: #7053d1;
+.hire-btn:hover{
+  color: #7053d1;
+  border-color:  #7053d1;
   transition: .4s all ease-in-out;
 }
 
@@ -675,16 +681,7 @@ section {
   padding-bottom: 20px;
   position: relative;
 }
-/* .section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-} */
+
 .section-title h2::after {
   content: "";
   position: absolute;
@@ -736,7 +733,14 @@ section {
   font-size: 14px;
 }
 
-/* About Us */
+/*-------------------
+ About Us 
+ ----------------------*/
+
+.about{
+  background-image: linear-gradient(#1e1e1e, #000000);
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;
@@ -757,50 +761,19 @@ section {
   margin-bottom: 0;
 }
 
-/* Why Us */
-.why-us {
-  padding: 0;
-}
-.why-us .row {
-  overflow: hidden;
-}
-.why-us .content-item {
-  padding: 40px;
-  border-left: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  margin: -1px;
-}
-.why-us .content-item span {
-  display: block;
-  font-size: 24px;
-  font-weight: 400;
-  color: #008cff;
-}
-.why-us .content-item h4 {
-  font-size: 26px;
-  font-weight: 300;
-  padding: 0;
-  margin: 20px 0;
-}
-.why-us .content-item p {
-  color: #aaaaaa;
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-}
-@media (max-width: 768px) {
-  .why-us .content-item {
-    padding: 40px 0;
-  }
-}
 
-/* Services */
+
+/*-----------------
+ Why Us (formerly services)
+ ----------------- */
+ .services{
+  background-image: linear-gradient(#000000, #1e1e1e);
+ }
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: linear-gradient(to bottom right,#fcfcfc, #ffffff);
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  background: #1e1e1e ;
   border-radius: 25px;
   transform: scale(1)
   
@@ -847,68 +820,54 @@ section {
   font-size: 14px;
   margin-bottom: 0;
 }
-.services .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+
+/* -------------------
+Features (Formally why us)
+--------------------------*/
+.why-us {
+  padding: 0;
+  background-image: linear-gradient(#1e1e1e, #000000);
 }
-.services .iconbox-blue i {
-  color: #47aeff;
+.why-us .row {
+  overflow: hidden;
 }
-.services .iconbox-blue:hover .icon i {
-  color: #fff;
+.why-us .content-item {
+  padding: 40px;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: -1px;
 }
-.services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
+.why-us .content-item span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  color: #008cff;
 }
-.services .iconbox-orange i {
-  color: #ffa76e;
+.why-us .content-item h4 {
+  font-size: 26px;
+  font-weight: 300;
+  padding: 0;
+  margin: 20px 0;
 }
-.services .iconbox-orange:hover .icon i {
-  color: #fff;
+.why-us .content-item p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
 }
-.services .iconbox-orange:hover .icon path {
-  fill: #ffa76e;
-}
-.services .iconbox-pink i {
-  color: #e80368;
-}
-.services .iconbox-pink:hover .icon i {
-  color: #fff;
-}
-.services .iconbox-pink:hover .icon path {
-  fill: #e80368;
-}
-.services .iconbox-yellow i {
-  color: #ffbb2c;
-}
-.services .iconbox-yellow:hover .icon i {
-  color: #fff;
-}
-.services .iconbox-yellow:hover .icon path {
-  fill: #ffbb2c;
-}
-.services .iconbox-red i {
-  color: #ff5828;
-}
-.services .iconbox-red:hover .icon i {
-  color: #fff;
-}
-.services .iconbox-red:hover .icon path {
-  fill: #ff5828;
-}
-.services .iconbox-teal i {
-  color: #11dbcf;
-}
-.services .iconbox-teal:hover .icon i {
-  color: #fff;
-}
-.services .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
+@media (max-width: 768px) {
+  .why-us .content-item {
+    padding: 40px 0;
+  }
 }
 
-/* Cta */
+
+/*--------------------
+ Cta
+ --------------------- */
 .cta {
-  background: #005fae;
+  /* background: #005fae; */
+  background-image: linear-gradient(#1e1e1e, #000000);
   padding: 80px 0;
 }
 .cta h3 {
@@ -951,13 +910,16 @@ section {
 }
 
 /* Team */
+.team{
+  background-image: linear-gradient(#000000, #1e1e1e);
+}
 .team .member {
   text-align: center;
   margin-bottom: 20px;
   box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
   border-radius: 25px;
   padding: 30px 20px;
-  background: #fff;
+  background: #1e1e1e;
 }
 
 /* .team .member{
@@ -999,8 +961,13 @@ section {
   padding-bottom: 10px;
 }
 
+.team .member span{
+  color: #afafaf;
+}
+
 .team .member .card-cont ul li{
   list-style: none;
+  color: #afafaf;
   padding: 3px;
   font-size: 15px;
 }
@@ -1065,18 +1032,22 @@ section {
 }
 
 /* Contact */
+
+.contact{
+  background-image: linear-gradient(#1e1e1e, #000000);
+}
 .contact .info {
   /* border-top: 3px solid #005fae;
   border-bottom: 3px solid #005fae; */
   border-radius: 25px;
   padding: 30px;
-  background: #fff;
+  background: transparent;
   width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  
 }
 .contact .info i {
   font-size: 20px;
-  color: #005fae;
+  color: #1f8ce2;
   float: left;
   width: 44px;
   height: 44px;
@@ -1092,7 +1063,7 @@ section {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #222222;
+  color: #afafaf;
 }
 .contact .info p {
   padding: 0 0 10px 60px;
@@ -1103,7 +1074,7 @@ section {
 .contact .info .social-links {
   padding-left: 60px;
 }
-.contact .info .social-links a {
+/* .contact .info .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #333;
@@ -1120,25 +1091,29 @@ section {
 .contact .info .social-links a:hover {
   background: #005fae;
   color: #fff;
-}
+} */
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #005fae;
+  background: #1f8ce2;
   color: #fff;
 }
-.contact .php-email-form {
+
+/* ------------
+Email form
+---------------*/
+.contact .email-form {
   
   width: 100%;
   /* border-top: 3px solid #005fae;
   border-bottom: 3px solid #005fae; */
   border-radius: 25px;
   padding: 30px;
-  background: #fff;
+  background: #1e1e1e;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   padding-bottom: 8px;
 }
-.contact .php-email-form .error-message {
+.contact .email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1146,10 +1121,10 @@ section {
   padding: 15px;
   font-weight: 600;
 }
-.contact .php-email-form .error-message br + br {
+.contact .email-form .error-message br + br {
   margin-top: 25px;
 }
-.contact .php-email-form .sent-message {
+.contact .email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1157,13 +1132,13 @@ section {
   padding: 15px;
   font-weight: 600;
 }
-.contact .php-email-form .loading {
+.contact .email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
-.contact .php-email-form .loading:before {
+.contact .email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1175,31 +1150,48 @@ section {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .email-form input, .contact .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
 }
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #005fae;
+.contact .email-form input:focus, .contact .email-form textarea:focus {
+  border-color: #7053d1;
 }
-.contact .php-email-form input {
+.contact .email-form input {
   height: 44px;
+  background: transparent;
+  border-color: #1f8ce2;
+
 }
-.contact .php-email-form textarea {
+.contact .email-form label{
+  color: #afafaf;
+  
+}
+.contact .email-form textarea {
   padding: 10px 12px;
+  background: transparent;
+  border-color: #1f8ce2;
+  
 }
-.contact .php-email-form button[type=submit] {
-  background: #005fae;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
+
+.contact .email-form button[type=submit] {
+  padding: 0;
+  background: transparent;
+  
+  padding: 11px 30px;
+  font-size: 16px;
+  color: #1f8ce2;
+  border-color: #1f8ce2;
+  border-radius: 50px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
 }
-.contact .php-email-form button[type=submit]:hover {
-  background: #008cff;
+.contact .email-form button[type=submit]:hover {
+  color: #7053d1;
+  border-color:  #7053d1;
+  transition: .4s all ease-in-out;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1218,9 +1210,11 @@ section {
   }
 }
 
-/* Footer */
+/*---------------
+ Footer
+ ---------------- */
 #footer {
-  background: #005fae;
+  background-image: linear-gradient(to right, #1f8ce2, #7053d1);
   color: #fff;
   font-size: 14px;
   text-align: center;
