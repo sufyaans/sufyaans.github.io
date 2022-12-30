@@ -959,6 +959,58 @@ section {
   padding: 30px 20px;
   background: #fff;
 }
+
+/* .team .member{
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
+  transition: transform 0.3s;
+} */
+
+.team .member:hover{
+  transform: scale(1.050);
+}
+
+
+/* 
+.team .member .title{
+  padding: 30px 20px;
+  border-bottom: 2px solid gray;
+}
+
+.team .member .title h4{
+  font-size: 35px;
+  padding-bottom: 15px;
+  color: #ffffff;
+}
+
+.team .member .title p span{
+  font-size: 40px;
+  padding: 0 5px;
+}
+*/
+.team .member .card-cont ul{
+  padding: 10px 30px;
+  padding-bottom: 10px;
+}
+
+.team .member .card-cont ul li{
+  list-style: none;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.team .member .card-cont ul li i{
+  margin-right: 4px;
+  font-size: 13px;
+  color: #1f8ce2;
+} 
+
 .team .member img {
   max-width: 60%;
   border-radius: 50%;
