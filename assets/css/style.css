@@ -24,6 +24,13 @@ p{
   color: #afafaf;
 }
 
+/* Check on this*/
+@media (max-width: 900px) {
+  br{
+    display:none;
+  }
+}
+
 
 /* HEADER */
 /*
@@ -844,18 +851,24 @@ Features (Formally why us)
   font-weight: 400;
   color: #008cff;
 }
-.why-us .content-item h4 {
-  font-size: 26px;
+.why-us .content-item h5 {
+  font-size: 20px;
   font-weight: 300;
   padding: 0;
   margin: 20px 0;
 }
+
+.why-us .section-title span{
+  font-weight: 700;
+}
+
 .why-us .content-item p {
   color: #aaaaaa;
-  font-size: 15px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
+
 @media (max-width: 768px) {
   .why-us .content-item {
     padding: 40px 0;
