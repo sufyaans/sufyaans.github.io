@@ -25,10 +25,14 @@ p{
 }
 
 /* Check on this*/
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   br{
     display:none;
   }
+} */
+
+br{
+  display:none;
 }
 
 
@@ -385,7 +389,7 @@ Mobile Nav
 }
 
 .header-area.header-sticky .logo {
-  margin-top: 25px;
+  margin-top:12px;
 }
 
 .header-area.header-sticky .nav {
@@ -421,7 +425,7 @@ Mobile Nav
     padding: 0px;
   }
   .header-area .logo {
-    margin-top: 27px !important;
+    margin-top: 12px !important;
     margin-left: 30px;
   }
   .header-area .menu-trigger {
