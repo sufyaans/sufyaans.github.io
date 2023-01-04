@@ -31,10 +31,6 @@ p{
   }
 } */
 
-br{
-  display:none;
-}
-
 
 /* HEADER */
 /*
@@ -926,6 +922,21 @@ Features (Formally why us)
     align-items: center;
     justify-content: flex-end;
   }
+
+}
+@media (max-width: 769px) {
+
+  .welcome-row{
+	  min-height: auto;
+	  flex-direction: column-reverse;
+  }
+  #welcome{
+	padding-top: 138px;
+  }
+  .welcome_image img {
+	    margin-top: 30px;
+		margin-bottom: 40px;
+	}
 }
 
 /*---------------
