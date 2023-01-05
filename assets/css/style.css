@@ -749,6 +749,16 @@ section {
   background-image: linear-gradient(#1e1e1e, #000000);
 }
 
+@media (min-width: 900px) {
+  .about img {
+    height: 80%;
+  }
+}
+.about img{
+  
+  border-radius: 30px;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;
@@ -1146,6 +1156,21 @@ Email form
   background: #1e1e1e;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
+
+.contact input{
+  color:#1f8ce2;
+}
+.contact textarea{
+  color: #1f8ce2;
+}
+.contact input:focus{
+  color:#7053d1;
+}
+
+.contact textarea:focus{
+  color: #7053d1;
+}
+
 .contact .email-form .form-group {
   padding-bottom: 8px;
 }
